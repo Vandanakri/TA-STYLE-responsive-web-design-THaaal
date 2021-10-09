@@ -1,0 +1,151 @@
+<!-- writeCode
+
+- Create a responsive layout according to the design shown below.
+
+#### Large Screen view(Above 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-1-desktop-view.png)
+
+#### Small Screen view(Below 768px)
+
+![Responsive Layout Assignment](https://raw.githubusercontent.com/suraj122/AC-STYLE-images/master/rwd/ex-1-mob-view.png)
+
+- Using CSS resets is necessary.
+
+- Use semantic tags and keep the nesting and indentation proper.
+
+- Pay attention to the codes, your code quality matters a lot.
+
+- Try to implement the layout as exactly as it has been provided in the design.
+
+- Pay attention to minor things like spacing, alignment, size, etc.
+
+- Use any font-family which suits better for the assignment.
+
+- Once you are done with the assignment connect with the mentor and get the code reviewed. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive | Assignment 1</title>
+  <link rel="stylesheet" href="stylesheet/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2ef76ba143.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <section class="header">
+    <header class="flex container column ">
+      <figure class="brand-img">
+        <img src="https://s3-ap-southeast-1.amazonaws.com/letsintern.com/images-employer/850635241.png" alt="brand">
+      </figure>
+      <nav class="green-blog">
+        <ul class="flex ul ">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="green" href="Blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="About.html">About</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </section>
+  <main>
+    <section class="hero-section ">
+      <article class="flex container">
+        <div class="flex-50">
+          <h1>What is Lorem Ipsum ?</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, beatae et eos unde, temporibus voluptatem
+            fugiat consequuntur rem quae deserunt veniam error id nam cumque praesentium quos ab natus asperiores?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem sunt ratione unde quis. Quasi dolorem
+            neque expedita necessitatibus illo, omnis ratione explicabo distinctio voluptates. Est sit atque
+            perspiciatis aut odio.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia odit officia voluptatibus, distinctio
+            aspernatur vel odio reiciendis, libero nisi tempora blanditiis assumenda recusandae, eligendi fugit et magni
+            quasi laudantium exercitationem?
+          </p>
+          <nav class="hero-nav">
+            <a href="#">Read More</a>
+          </nav>
+        </div>
+        <div class="flex-50">
+          <figure class="heroimg">
+            <img src="./assets/01.png" alt="pencile">
+          </figure>
+        </div>
+      </article>
+    </section>
+    <section class="blog-section">
+      <article>
+        <div class="blog">
+          <h2>Our Blog</h2>
+        </div>
+        <div class="container flex">
+          <div class="flex-30">
+            <figure class="our-blog-img">
+              <img  src="./assets/02.png" alt="books">
+            </figure> 
+            <h2 class="blog-h2">Why do we use it? </h2>
+            <p class="blog-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias nulla suscipit id ipsum aspernatur,
+              dolorum, voluptatibus veritatis esse error eligendi accusamus, adipisci iste enim aliquid amet pariatur.
+              Repellat, quasi ratione.</p>
+            <nav class="blog-nav">
+              <a href="#">Read More</a>
+            </nav>
+          </div>
+
+          <div class="flex-30">
+            <figure class="our-blog-img">
+              <img  src="./assets/03.png" alt="telephone">
+            </figure> 
+            <h2 class="blog-h2">Where does it come from? </h2>
+            <p class="blog-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias nulla suscipit id ipsum aspernatur,
+              dolorum, voluptatibus veritatis esse error eligendi accusamus, adipisci iste enim aliquid amet pariatur.
+              Repellat, quasi ratione.</p>
+            <nav class="blog-nav">
+              <a href="#">Read More</a>
+            </nav>
+          </div>
+
+          <div class="flex-30">
+            <figure class="our-blog-img">
+              <img  src="./assets/04.png" alt="working on system">
+            </figure> 
+            <h2 class="blog-h2">Where can I get some? </h2>
+            <p class="blog-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias nulla suscipit id ipsum aspernatur,
+              dolorum, voluptatibus veritatis esse error eligendi accusamus, adipisci iste enim aliquid amet pariatur.
+              Repellat, quasi ratione.</p>
+            <nav class="blog-nav">
+              <a href="#">Read More</a>
+            </nav>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="flex container column">
+      <small>&copy AltCampus </small>
+      <nav class="footer-nav">
+       <a href="#"><i class="fab fa-facebook-square"></i></a>
+       <a href="#"><i class="fab fa-twitter-square"></i></a>
+      </nav>
+    </div>
+  </footer>
+</body>
+
+
+</html>
