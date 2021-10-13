@@ -53,14 +53,20 @@ table {
 *::before,
 *::after {
   box-sizing: border-box;
-  
+    
 }
+.fullwidth {
+  object-fit: cover;
+  width: 100%;
+  
 
+}
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 3rem;
+  padding: 0 2rem;
+  width: 100%;
 }
 .flex {
   display: flex;
@@ -74,13 +80,28 @@ a {
 
 /* header */
 
-.header {
+.section-bg {
   background: linear-gradient(rgba(53,42,177,0.7), rgba(53,42,177,0.7)), url(../assets/banner.png);
-  width: 100vw;
-  height: 100vh;
+  /* width: 100%; */
+  height: 800px;
   background-size: cover;
-  position: relative;
+  
+  
 }
+.header {
+  position: absolute;
+  z-index: 2;
+  width:100%;
+  top: 1rem;
+}
+
+.header .box{
+  margin: 0 auto;
+}
+#toggle, .bars {
+  display: none;
+}
+
 strong {
  color: #fff;
  font-size: 2.5rem;
@@ -103,14 +124,18 @@ strong {
   margin-left: 2rem;
   
 }
-.header-margin {
-  padding-top: 2rem;
-}
+
 /* hero */
 
 .flex-40 {
  flex: 0 1 40%;
+
 }
+
+.adjustment{
+  padding-top: 6rem;
+}
+
 h1 {
   font-size: 3rem;
   font-weight: 700;
@@ -118,42 +143,47 @@ h1 {
   margin-bottom: 2rem;
   color: #fff;
 }
-.flex-40 p {
+.flex-48 .para {
   line-height: 1.5rem;
   margin-bottom: 2rem;
-  color: #fff;
+  color: rgb(97, 94, 94);
+}
+.flex-40 img {
+  margin-top: 4rem;
 }
 .hero-nav {
   background-color:rgb(249,35,77);
   padding: 1rem 2rem;
   color: #fff;
   border-radius: .3rem;
+  
 }
 b {
  color: rgb(249,35,77); 
 }
-.position {
-  position: absolute;
-  top: 7rem;
-  left: 5rem;
-}
-.flex-40 img {
-  height: 70vh;
-  margin-left: 5.5rem;
+
+
+.flex-48 img {
+  /* height: 70vh; */
+  /* margin-left: 5.5rem; */
+  
   
 }
 /* about  */
 
 .about-img img{
-  height: 70vh;
+  
   margin-top: 5rem;
   width: 100%;
   
 }
-.flex-40 .para {
+.para {
   color: rgb(91, 91, 94);
  
 
+}
+.para {
+  margin-bottom: 2rem;
 }
 .about-h2 {
   font-size: 2rem;
@@ -168,13 +198,24 @@ b {
   padding: 1rem 2rem;
   color: #fff;
   border-radius: .3rem;
+  
 }
 
 .dash-box {
   border: red dashed 2px ;
+  
 }
 .flex-30 {
   flex: 0 1 30%;
+  position: relative;
+}
+.flex-48 {
+  flex: 0 1 48%;
+}
+.flex-48 p {
+  color: #fff;
+  line-height: 1.5rem ;
+  margin-bottom: 2rem;
 }
 .dash-box h3 {
   font-size: 2rem;
@@ -192,7 +233,6 @@ b {
 }
 .network-bg {
   background-color: rgb(223,236,255);
-  position: relative;
   padding-bottom: 4rem;
 }
 .dash-box p {
@@ -201,30 +241,27 @@ b {
 }
 .one {
   position: absolute;
-  top: 6.7rem;
-  left: 10rem;
+  top: -1rem;
+  left: 2rem;
   font-size: 2rem;
-  padding: .7rem;
   color: rgb(249,35,77);
   background-color: rgb(223,236,255);
 }
 
 .two {
   position: absolute;
-  top: 6.7rem;
-  left: 35rem;
+  top: -1rem;
+  left: 2rem;
   font-size: 2rem;
-  padding: .7rem;
   color: rgb(249,35,77);
   background-color: rgb(223,236,255);
 }
 
 .three {
   position: absolute;
-  top: 6.7rem;
-  left: 59rem;
+  top: -1rem;
+  left: 2rem;
   font-size: 2rem;
-  padding: .7rem;
   color: rgb(249,35,77);
   background-color: rgb(223,236,255);
 }
@@ -246,9 +283,57 @@ b {
   font-weight: 900;
 }
 
+.date-item-1 {
+  
+  background-color: red;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  padding-left: 1.4rem;
+  padding-top: 1rem;
+  margin-top: 5rem;
+  color: #fff;
+  font-weight: 900;
+  
+}
+.date-item-1 time {
+   margin-left: .5rem;
+  font-size: 1.5rem;
+
+}
+.date-item-2 {
+  border: 2px dashed red;
+  background-color: #fff;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  padding-left: 1.4rem;
+  padding-top: 1rem;
+  margin-top: 4rem;
+  font-weight: 900;
+}
+.date-item-2 time {
+   margin-left: .5rem;
+  font-size: 1.5rem;
+
+}
+.line {
+  border: red dashed 1px;
+  height: 30rem;
+  position: absolute;
+  left: 5rem;
+  z-index: -1;
+  
+}
+.line-psn {
+  position: relative;
+  
+}
+
 
 .flex-15 {
   flex: 0 1 15%;
+  
 }
 .flex-60 {
   flex: 0 1 60%;
@@ -304,7 +389,6 @@ b {
 }
 .speaker-red {
   background-color: rgb(249,35,77);
-  height: 35vh;
   width: 20vw;
   padding: 2rem 6rem; 
   border-radius: 1rem;
@@ -322,16 +406,19 @@ b {
 }
 .disco-psn {
   position: absolute;
-  top: 20rem;
-  left: 40rem;
-  font-size: 3rem;
-  color: red;
+  top: 40%;
+  left: 45%;
+  
   background-color: #fff;
   width: 5rem;
   height: 5rem;
   padding-left: 1.4rem;
   padding-top: 1rem;
   border-radius: 50%;
+}
+.disco-psn a {
+  font-size: 3rem;
+  color: red;
 }
 /* new */
 
@@ -341,7 +428,7 @@ b {
   padding-bottom: 2rem;
 }
 .news img {
-  width: 24vw;
+  width: 100%;
 }
 .h2 {
   text-align: center;
@@ -412,3 +499,86 @@ h6 {
 .news a:hover {
   color: red;
 }
+
+
+
+@media all and (max-width:768px) { 
+  html{
+    font-size: 16px;
+  }
+  .container {
+    max-width: 720px;
+  }
+
+  .flex-15, .flex-25, .flex-30, .flex-40, .flex-48, .flex-50, .flex-60{
+    flex: 0 1 100%;
+
+    
+  }
+  .speaker {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .header-nav {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: rgba(32, 52, 123, 0.9);
+    padding-top: 12rem;
+    z-index: 99;
+  }
+  .header-item {
+    margin: 16px 0;
+  }
+  .brand, .bars {
+    position: fixed;
+    right: 2rem;
+    top: 2rem;
+    z-index: 99;
+  }
+  .brand {
+    left: 2rem;
+    
+  }
+  .header {
+    background-color: rgba(0,0,0,0.4);
+    height: 80px;
+    position: fixed;
+  }
+  #toggle:checked ~ .header-nav {
+    display: inline-block;
+  }
+  .bars {
+    font-size: 2rem;
+    color: #fff;
+    display: inline-block;
+  }
+   .sm-column {
+     flex-direction: column;
+   }
+   .dash-box {
+     margin-bottom: 2rem;
+   }
+
+  .wrap{
+    flex-wrap: wrap;
+  }
+.order-1{
+  order: 1;
+}
+  .section-bg{
+    height: 1200px;
+  }
+  .hero img {
+    max-height: 700px;
+    border-top-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+  }
+}
+  
